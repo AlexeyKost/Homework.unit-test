@@ -18,8 +18,8 @@ public class CashbackHackServiceTest {
     @Test
     public void testBoundaryAmount() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 900;
-        int expected = 100;
+        int amount = 1000;
+        int expected = 0;
         int actual = service.remain(amount);
         assertEquals(expected, actual);
     }
